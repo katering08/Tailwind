@@ -15,18 +15,16 @@
 <body class="min-h-screen flex flex-col">
   <header>
     {{#> header-block}}
-      {{> nav/topnav}}
+      {{> nav/navbar}}
     {{/header-block}}
   </header>
-  <main class="xl:container mx-auto flex-grow">
+  <main class="w-full">
     {{#> main-block }}
 
     {{/main-block}}
   </main>
-  <footer class=" bg-black text-white">
-    <section class="flex flex-col md:flex-row justify-between">
+  <footer>
     {{> footer/footer}}
-    </section>
   </footer>
   <script src="bundle.js"></script>
   {{#> scripts-block}}
